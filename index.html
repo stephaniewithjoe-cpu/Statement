@@ -1,0 +1,195 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="utf-8" />\
+  <meta name="viewport" content="width=device-width,initial-scale=1" />\
+  <title>Account \'97 Big Balance</title>\
+  <script src="https://cdn.tailwindcss.com"></script>\
+  <style>\
+    /* small extra for glossy card */\
+    .glass \{\
+      background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));\
+      backdrop-filter: blur(6px);\
+    \}\
+  </style>\
+</head>\
+<body class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-slate-100 flex items-center justify-center p-6">\
+  <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-3 gap-6">\
+    <!-- Left: Profile + quick info -->\
+    <aside class="md:col-span-1 glass rounded-2xl p-6 shadow-lg border border-white/5">\
+      <div class="flex items-center gap-4">\
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center text-xl font-bold">\
+          Y\
+        </div>\
+        <div>\
+          <div class="text-lg font-semibold">Joseph&Stephanie Morgan</div>\
+          <div class="text-sm text-slate-300">$ \'95 Dashboard</div>\
+        </div>\
+      </div>\
+\
+      <div class="mt-6">\
+        <h4 class="text-sm text-slate-300 uppercase tracking-wide">Account</h4>\
+        <div class="mt-2">\
+          <div class="text-xs text-slate-400">Account type</div>\
+          <div class="font-medium">Business</div>\
+        </div>\
+        <div class="mt-4">\
+          <div class="text-xs text-slate-400">Account ID</div>\
+          <div class="font-mono text-sm">XXXX-X344</div>\
+        </div>\
+      </div>\
+\
+      <div class="mt-6 space-y-3">\
+        <button id="toggleMask" class="w-full px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-medium">Hide balance</button>\
+        <a href="about.html" class="block w-full text-center px-4 py-2 border border-white/10 rounded-lg text-sm">Pay a bill</a>\
+      </div>\
+\
+      <p class="text-xs text-slate-400 mt-6">This needs authorized license \'97 by attorney incharge MISS ESTHER HENDRIX.</p>\
+    </aside>\
+\
+    <!-- Middle & Right: Big balance + activity -->\
+    <main class="md:col-span-2 grid grid-rows-2 gap-6">\
+      <!-- Big Balance Card -->\
+      <section class="glass rounded-2xl p-8 shadow-lg border border-white/5 flex flex-col justify-between">\
+        <div class="flex items-start justify-between">\
+          <div>\
+            <div class="text-sm text-slate-300">Available balance</div>\
+            <div class="mt-3 flex items-baseline gap-3">\
+              <div id="balance" aria-live="polite" class="text-4xl md:text-5xl font-extrabold tracking-tight">$5,999,999.90</div>\
+              <div class="text-sm text-slate-300">USD</div>\
+            </div>\
+            <div id="subtitle" class="mt-2 text-sm text-slate-400\'94>. <span id="date"></span></div>\
+          </div>\
+\
+          <div class="text-right">\
+            <div class="text-sm text-slate-300">Growth</div>\
+            <div id="growth" class="mt-2 text-green-400 font-semibold">+22.0%</div>\
+            <div class="text-xs text-slate-400 mt-2">Monthly</div>\
+          </div>\
+        </div>\
+\
+        <div class="mt-6 flex gap-3">\
+          <button id="animateToLarge" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 rounded-lg font-medium">Transfer</button>\
+          <button id=\'93AddBtn" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-medium">Add</button>\
+        </div>\
+      </section>\
+\
+      <!-- Recent Transactions / Mock metrics -->\
+      <section class="glass rounded-2xl p-6 shadow-lg border border-white/5">\
+        <h3 class="text-lg font-semibold">Recent activity</h3>\
+        <ul class="mt-4 space-y-3">\
+          <li class="flex justify-between items-center">\
+            <div>\
+              <div class="font-medium">Payout</div>\
+              <div class="text-xs text-slate-400">Flight Usage</div>\
+            </div>\
+            <div class="text-sm font-semibold">+$23,750</div>\
+          </li>\
+          <li class="flex justify-between items-center">\
+            <div>\
+              <div class="font-medium">Withdrawal</div>\
+              <div class="text-xs text-slate-400">License Authorization</div>\
+            </div>\
+            <div class="text-sm text-amber-300">-$1000</div>\
+          </li>\
+          <li class="flex justify-between items-center">\
+            <div>\
+              <div class="font-medium">Investment dividend</div>\
+              <div class="text-xs text-slate-400">Quarterly</div>\
+            </div>\
+            <div class="text-sm text-green-300">+$120,000</div>\
+          </li>\
+        </ul>\
+\
+        <div class="mt-6 grid grid-cols-3 gap-4">\
+          <div class="p-3 bg-white/3 rounded">\
+            <div class="text-xs text-slate-300">Daily Transfer Limit</div>\
+            <div class="font-semibold">$100,000.00</div>\
+          </div>\
+          <div class="p-3 bg-white/3 rounded">\
+            <div class="text-xs text-slate-300">Rewards</div>\
+            <div class="font-semibold">$26,800</div>\
+          </div>\
+          <div class="p-3 bg-white/3 rounded">\
+            <div class="text-xs text-slate-300">Interest</div>\
+            <div class="font-semibold">22%</div>\
+          </div>\
+        </div>\
+      </section>\
+    </main>\
+  </div>\
+\
+  <script>\
+    // small utilities\
+    const balanceEl = document.getElementById('balance');\
+    const dateEl = document.getElementById('date');\
+    const toggleMask = document.getElementById('toggleMask');\
+    const animateBtn = document.getElementById('animateToLarge');\
+    const resetBtn = document.getElementById('resetBtn');\
+\
+    // set today's date string\
+    const now = new Date();\
+    dateEl.textContent = now.toLocaleString();\
+\
+    // formatting helper\
+    function formatMoney(n) \{\
+      return n.toLocaleString(undefined, \{maximumFractionDigits:0\});\
+    \}\
+\
+    // animate count up\
+    function animateCount(toValue, duration = 1400) \{\
+      const start = performance.now();\
+      const from = parseFloat(balanceEl.dataset.current || 0);\
+      const to = toValue;\
+      function step(ts) \{\
+        const t = Math.min((ts - start) / duration, 1);\
+        // easeOutCubic\
+        const eased = 1 - Math.pow(1 - t, 3);\
+        const current = Math.round(from + (to - from) * eased);\
+        balanceEl.textContent = '$' + formatMoney(current);\
+        balanceEl.dataset.current = current;\
+        if (t < 1) requestAnimationFrame(step);\
+      \}\
+      requestAnimationFrame(step);\
+    \}\
+\
+    // Toggle mask / show\
+    let masked = false;\
+    toggleMask.addEventListener('click', () => \{\
+      masked = !masked;\
+      if (masked) \{\
+        balanceEl.textContent = '\'95\'95\'95\'95\'95\'95\'95\'95';\
+        toggleMask.textContent = 'Show balance';\
+      \} else \{\
+        // restore current number\
+        const cur = parseFloat(balanceEl.dataset.current || 0);\
+        balanceEl.textContent = '$' + formatMoney(cur);\
+        toggleMask.textContent = 'Hide balance';\
+      \}\
+    \});\
+\
+    // Buttons\
+    animateBtn.addEventListener('click', () => \{\
+      // Example large demo amount (fake): $50,000,000\
+      animateCount(50000000, 2000);\
+      if (masked) \{ masked = false; toggleMask.textContent = 'Hide balance'; \}\
+    \});\
+\
+    resetBtn.addEventListener('click', () => \{\
+      animateCount(1250000, 1000); // sample smaller starting amount\
+    \});\
+\
+    // initialize to a friendly demo number\
+    animateCount(1250000, 800);\
+  </script>\
+</body>\
+</html>\
+}
